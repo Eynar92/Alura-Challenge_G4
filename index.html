@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/encrypterIcon.svg" type="image/x-icon">
+    <title>Encryptador</title>
+    <script src="https://kit.fontawesome.com/deca55cb60.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+        <div id="logo">
+            <img src="./img/aluraLogo.svg" alt="Logo Alura">
+        </div>
+        <div id="input" class="input">
+            <textarea name="input_txt" id="input_txt" class="txtArea" placeholder="Ingrese el texto aquí"></textarea>
+            <div id="input_ctrl">
+                <!-- <div id="input_restriction"> -->
+                    <p id="input_restriction" class="gray_txt"><span><i class="correct fa-sharp fa-solid fa-circle-exclamation"></i></span> Solo letras minúsculas y sin acentos</p>
+                <!-- </div> -->
+                <div id="btns">
+                    <button id="encrypter" class="btn">Encriptar</button>
+                    <button id="decrypter" class="btn">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div id="output" class="output">
+            <div id="output_titles" class="">
+                <div class="output_image">
+                    <img src="./img/aluraMuñeco.svg" alt="Output Image">
+                </div>
+                <h2 class="output_title">Ningún mensaje fue encontrado</h2>
+                <p class="output_msg gray_txt">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div id="encryptTxt_container">
+                <textarea disabled name="encryptTxt_show" id="encryptTxt_show" class="txtArea"></textarea>
+                <button id="copy" class="btn">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_container">
+            <p class="footer_name">Desarrollado por Eynar Alvarez <a href="#"><i class="fa-brands fa-square-github"></i></a> <a href="#"><i class="fa-brands fa-linkedin"></i></a></p>
+        </div>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
